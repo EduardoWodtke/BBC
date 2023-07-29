@@ -1,138 +1,156 @@
-<script setup>
-    class MobileNavbar {
-        constructor(mobileMenu, navlist, navLinks) {
-            this.mobileMenu = document.querySelector(mobileMenu);
-            this.navlist = document.querySelector(navlist);
-            this.navLinks = document.querySelectorAll(navLinks);
-            this.activeClass = "active";
+<script>
+export default {
+  mounted() {
+    const btnMobile = document.getElementById('btn-mobile');
+    const nav = document.getElementById('nav');
 
-            this.handleClick = this.handleClick.bind(this);
-        }
-        handleClick() {
-            this.navlist.classList.toggle(this.activeClass);
-        }
-        addClickEvent() {
-            this.mobileMenu.addEventListener("click", this.handleClick);
-        }
-        init() {
-            if (this.mobileMenu) {
-                this.addClickEvent();
-            }
-            return this;
-        }
+    function toggleMenu(event) {
+      if (event.type === 'touchstart') event.preventDefault();
+      nav.classList.toggle('active');
+      const active = nav.classList.contains('active');
+      event.currentTarget.setAttribute('aria-expanded', active);
+      if (active) {
+        event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+      } else {
+        event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
+      }
     }
 
-    const mobileNavbar = new MobileNavbar(
-        ".mobile-menu",
-        ".nav-list",
-        ".nav-list li",
-    );
-    mobileNavbar.init();
+    btnMobile.addEventListener('click', toggleMenu);
+    btnMobile.addEventListener('touchstart', toggleMenu);
+  },
+};
 </script>
 
 <template>
-    <header>
-        <nav>
-            <a class="logo" href="">BBC</a>
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-            <ul class="nav-list">
-                <li><a href="">Início</a></li>
-                <li><a href="">Loja</a></li>
-                <li><a href="">Sobre nós</a></li>
-                <li><a href="">Contato</a></li>
-            </ul>
-        </nav>
+    <header id="header">
+      <a id="logo" href="">Logo</a>
+      <nav id="nav">
+        <button
+          aria-label="Abrir Menu"
+          id="btn-mobile"
+          aria-haspopup="true"
+          aria-controls="menu"
+          aria-expanded="false"
+        >
+          Menu
+          <span id="hamburger" aria-hidden="true"></span>
+        </button>
+        <ul id="menu" role="menu">
+          <li><a href="/">Sobre</a></li>
+          <li><a href="/">Produtos</a></li>
+          <li><a href="/">Portfólio</a></li>
+          <li><a href="/">Contato</a></li>
+        </ul>
+      </nav>
     </header>
-    <main></main>
-</template>
+  </template>
+  
 
-<style scoped>
-* {
-    margin: 0px;
-    padding: 0px;
+<style>
+body,
+ul {
+  margin: 0px;
+  padding: 0px;
 }
 
 a {
-    color: #fff;
-    text-decoration: none;
-    transition: 0.3s;
+  color: black;
+  text-decoration: none;
+  font-family: sans-serif;
 }
 
 a:hover {
-    opacity: 0.7;
+  background: rgba(0, 0, 0, 0.05);
 }
 
-.logo {
-    font-size: 24px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
+#logo {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-nav {
+#header {
+  box-sizing: border-box;
+  height: 70px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #e7e7e7;
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+#menu a {
+  display: block;
+  padding: 0.5rem;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: #e7e7e7;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+  #btn-mobile {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background: #23232e;
-    height: 8vh;
-}
-
-main {
-    background: url("https://media.istockphoto.com/id/168498736/pt/foto/esticar-limousina-isolado-a-branco.jpg?s=612x612&w=0&k=20&c=w4mjYJJxiuhydhqmSDZwpesulfzgMDWYtuEvwSgipjo=") no-repeat center center;
-    background-size: cover;
-    height: 92vh;
-}
-
-.nav-list {
-    list-style: none;
-    display: flex;
-}
-
-.nav-list li{
-    letter-spacing: 3px;
-    margin-left: 32px;
-}
-
-.mobile-menu{
-    display: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
     cursor: pointer;
-}
-.mobile-menu div{
-    width: 32px;
+    gap: 0.5rem;
+  }
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
     height: 2px;
-    background: #fff;
-    margin: 8px;
-}
-
-@media (max-width: 999px){
-    body{
-        overflow-x: hidden;
-    }
-    .nav-list{
-        position: absolute;
-        top: 8vh;
-        right:0;
-        width: 50vw;
-        height: 92vh;
-        background: #23232e;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in;
-    }
-    .nav-list li{
-        margin-left: 0;
-        opacity: 0;
-    }
-    .mobile-menu{
-        display: block;
-    }
-    .nav-list.active{
-        transform: translateX(0);
-    }
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
 }
 </style>
