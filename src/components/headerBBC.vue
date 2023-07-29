@@ -1,9 +1,10 @@
 <script setup>
-import headerBBC from './components/headerBBC.vue';
 </script>
 
 <template>
-  <headerBBC/>
+  <nav>
+    tudo tranquilo?
+  </nav>
 </template>
 
 <style scoped>
