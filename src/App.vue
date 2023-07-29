@@ -1,5 +1,5 @@
 <script setup>
-import headerBBC from './components/headerBBC.vue';
+ import headerBBC from './components/headerBBC.vue';
 </script>
 
 <template>
@@ -7,4 +7,5 @@ import headerBBC from './components/headerBBC.vue';
 </template>
 
 <style scoped>
+
 </style>
