@@ -1,24 +1,27 @@
 <script setup>
-    class MobileNavbar{
-        constructor(mobileMenu, navlist, navLinks){
+    class MobileNavbar {
+        constructor(mobileMenu, navlist, navLinks) {
             this.mobileMenu = document.querySelector(mobileMenu);
             this.navlist = document.querySelector(navlist);
             this.navLinks = document.querySelectorAll(navLinks);
-            this.activeClass = "active"
+            this.activeClass = "active";
+
+            this.handleClick = this.handleClick.bind(this);
         }
-        handleClick(){
-            
+        handleClick() {
+            this.navlist.classList.toggle(this.activeClass);
         }
-        addClickEvent(){
+        addClickEvent() {
             this.mobileMenu.addEventListener("click", this.handleClick);
         }
-        init(){
-            if(this.mobileMenu){
+        init() {
+            if (this.mobileMenu) {
                 this.addClickEvent();
             }
             return this;
         }
     }
+
     const mobileNavbar = new MobileNavbar(
         ".mobile-menu",
         ".nav-list",
@@ -119,6 +122,7 @@ main {
         align-items: center;
         justify-content: space-around;
         transform: translateX(100%);
+        transition: transform 0.3s ease-in;
     }
     .nav-list li{
         margin-left: 0;
