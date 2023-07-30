@@ -24,7 +24,7 @@ export default {
 
 <template>
     <header id="header">
-      <a id="logo" href="">Logo</a>
+      <a id="logo" href="">BBC</a>
       <nav id="nav">
         <button
           aria-label="Abrir Menu"
@@ -37,10 +37,10 @@ export default {
           <span id="hamburger" aria-hidden="true"></span>
         </button>
         <ul id="menu" role="menu">
-          <li><a href="/">Sobre</a></li>
-          <li><a href="/">Produtos</a></li>
-          <li><a href="/">Portfólio</a></li>
+          <li><a href="/">Loja</a></li>
+          <li><a href="/">Sobre nós</a></li>
           <li><a href="/">Contato</a></li>
+          <li><a href="/">Login</a></li>
         </ul>
       </nav>
     </header>
