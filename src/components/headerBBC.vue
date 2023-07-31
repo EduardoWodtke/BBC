@@ -44,10 +44,13 @@ export default {
         </ul>
       </nav>
     </header>
+    
   </template>
   
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+
 body,
 ul {
   margin: 0px;
@@ -57,7 +60,7 @@ ul {
 a {
   color: black;
   text-decoration: none;
-  font-family: sans-serif;
+  font-family: 'Bruno Ace', cursive;
 }
 
 a:hover {
