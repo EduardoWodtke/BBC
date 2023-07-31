@@ -24,7 +24,6 @@ export default {
 
 <template>
     <header id="header">
-      <a id="logo" href="">BBC</a>
       <router-link to="/">BBC</router-link>
       <nav id="nav">
         <button
@@ -38,13 +37,10 @@ export default {
           <span id="hamburger" aria-hidden="true"></span>
         </button>
         <ul id="menu" role="menu">
-          <li><a href="/">Loja</a></li>
-          <router-link to="/loja">Loja</router-link>
-          <router-link to="/sobre">Sobre nós</router-link>
-          <li><a href="/">Contato</a></li>
-          <router-link to="/contato">Contato</router-link>
-          <li><a href="/">Login</a></li>
-          <router-link to="/login">Login</router-link>
+          <router-link class="a" to="/loja">Loja</router-link>
+          <router-link class="a" to="/sobre">Sobre nós</router-link>
+          <router-link class="a" to="/contato">Contato</router-link>
+          <router-link class="a" to="/login">Login</router-link>
         </ul>
       </nav>
     </header>

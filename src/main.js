@@ -6,13 +6,8 @@ import router from './router'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap'
 
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faPhone, faUser } from '@fortawesome/free-solid-svg-icons'
-//import { FontAwesomeIcon } from '@fortawesome/cue-fontawesome'
+const app = createApp(App)
 
-library.add(faPhone, faUser)
+app.use(router)
 
-createApp(App)
-    //.component('fa', FontAwesomeIcon)
-    .use(router)
-    .mount('#app')
+app.mount('#app')

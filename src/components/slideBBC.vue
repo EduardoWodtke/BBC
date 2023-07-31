@@ -1,4 +1,5 @@
 <template>
+
   <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button
