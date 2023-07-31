@@ -1,6 +1,6 @@
-<script setup>
-</script>
+<script setup></script>
 
 <template>
-    gay
+  <h1>BBC</h1>
+  <button @click="$router.push({name: 'bbc'})">BBC</button>
 </template>
