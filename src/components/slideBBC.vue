@@ -24,24 +24,30 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="1000">
-        <img src="..." class="d-block w-100" alt="..." />
+        <img src="https://exclusivalimusine.com.br/wp-content/uploads/2021/04/Limo-Cadilac-preta.jpg" class="d-block w-100" alt="Big Black Car" />
         <div class="carousel-caption d-none d-md-block">
         <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+        <p>As melhores limousines de todos os tempos</p>
       </div>
       </div>
       <div class="carousel-item" data-bs-interval="1000">
         <img src="..." class="d-block w-100" alt="..." />
         <div class="carousel-caption d-none d-md-block">
         <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+        <p>Maior conforto para sua viagem</p>
       </div>
       </div>
       <div class="carousel-item" data-bs-interval="1000">
         <img src="..." class="d-block w-100" alt="..." />
         <div class="carousel-caption d-none d-md-block">
         <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+        <p>Colecione momentos</p>
+      </div>
+      <div class="carousel-item" data-bs-interval="1000">
+        <img src="..." class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p></p>
       </div>
       </div>
     </div>

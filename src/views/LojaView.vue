@@ -2,5 +2,5 @@
 
 <template>
   <h1>Loja</h1>
-  <button @click="$router.push({name: 'loja'})">Ir para Loja</button>
+  <button @click="$router.push({name: 'loja'})">Loja</button>
 </template>

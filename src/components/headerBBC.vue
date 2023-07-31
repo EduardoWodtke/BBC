@@ -25,6 +25,7 @@ export default {
 <template>
     <header id="header">
       <a id="logo" href="">BBC</a>
+      <router-link to="/">BBC</router-link>
       <nav id="nav">
         <button
           aria-label="Abrir Menu"
@@ -38,9 +39,12 @@ export default {
         </button>
         <ul id="menu" role="menu">
           <li><a href="/">Loja</a></li>
-          <li><a href="/">Sobre nós</a></li>
+          <router-link to="/loja">Loja</router-link>
+          <router-link to="/sobre">Sobre nós</router-link>
           <li><a href="/">Contato</a></li>
+          <router-link to="/contato">Contato</router-link>
           <li><a href="/">Login</a></li>
+          <router-link to="/login">Login</router-link>
         </ul>
       </nav>
     </header>
