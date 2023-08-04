@@ -24,7 +24,7 @@ export default {
 
 <template>
     <header id="header">
-      <router-link to="/">BBC</router-link>
+      <router-link class="a" to="/">BBC</router-link>
       <nav id="nav">
         <button
           aria-label="Abrir Menu"
@@ -49,7 +49,7 @@ export default {
   
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+
 
 body,
 ul {
@@ -57,13 +57,14 @@ ul {
   padding: 0px;
 }
 
-a {
-  color: black;
+.a {
+  color: white;
   text-decoration: none;
   font-family: 'Bruno Ace', cursive;
+  font-size: 20px;
 }
 
-a:hover {
+.a:hover {
   background: rgba(0, 0, 0, 0.05);
 }
 
@@ -79,7 +80,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #e7e7e7;
+  background: #415aca;
 }
 
 #menu {

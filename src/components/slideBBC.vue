@@ -27,32 +27,33 @@
         <img
           src="https://exclusivalimusine.com.br/wp-content/uploads/2021/04/Limo-Cadilac-preta.jpg"
           class="d-block w-100"
+          height="500"
           alt="Big Black Car"
         />
         <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
           <p>As melhores limousines de todos os tempos</p>
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="1000">
         <img
-          src="https://exclusivalimusine.com.br/wp-content/uploads/2021/04/Limo-Cadilac-preta.jpg"
+          src="https://i.pinimg.com/236x/05/4a/ab/054aab5a53626288b8244101aa4c4455.jpg"
           class="d-block w-100"
+          height="500"
           alt="..."
         />
         <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
           <p>Maior conforto para sua viagem</p>
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="1000">
         <img
-          src="https://exclusivalimusine.com.br/wp-content/uploads/2021/04/Limo-Cadilac-preta.jpg"
+          src="https://i.pinimg.com/236x/80/e4/09/80e409f9a5fee4b50eafe7fdb105c81b.jpg
+          "
           class="d-block w-100"
+          height="500"
           alt="..."
         />
         <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
           <p>Colecione momentos</p>
         </div>
       </div>
@@ -77,3 +78,5 @@
     </div>
   </div>
 </template>
+<style>
+</style>
