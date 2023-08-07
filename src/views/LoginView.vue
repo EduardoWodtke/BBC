@@ -94,7 +94,7 @@ const enviar = ref(false)
           <p>Li e aceito os termos</p>
           <label for="aceitaTermos">Aceito os termos</label>
           <input type="checkbox" v-model="aceitaTermos" />
-
+          <br>
           <button type="submit">Enviar</button>
         </div>
       </form>
@@ -107,9 +107,27 @@ const enviar = ref(false)
 .main{
   display: grid;
   grid-template-columns: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
 }
 .formulario{
   border: 5px solid black;
-  border-radius: 5px;
+  border-radius: 30px;
+  padding: 10px 50px 10px 50px; 
+  text-align: center;
+  background-color: rgb(217, 217, 217);
 }
+p {
+  padding-top: 5px;
+}
+
+input {
+  border-radius: 7px;
+}
+
+select {
+  border-radius: 7px;
+}
+
 </style>

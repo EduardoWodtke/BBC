@@ -64,7 +64,7 @@
     font-family: 'Poppins', sans-serif;
 }
 footer{
-    background-color: #415aca;
+    background-color: #000000;
     padding: 50px 0;
 }
 .container-footer{

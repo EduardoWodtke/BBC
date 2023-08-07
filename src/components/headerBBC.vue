@@ -24,7 +24,7 @@ export default {
 
 <template>
     <header id="header">
-      <router-link class="a" to="/">BBC</router-link>
+      <router-link class="bbc" to="/">BBC</router-link>
       <nav id="nav">
         <button
           aria-label="Abrir Menu"
@@ -37,10 +37,10 @@ export default {
           <span id="hamburger" aria-hidden="true"></span>
         </button>
         <ul id="menu" role="menu">
-          <router-link class="a" to="/loja">Loja</router-link>
-          <router-link class="a" to="/sobre">Sobre nós</router-link>
-          <router-link class="a" to="/contato">Contato</router-link>
-          <router-link class="a" to="/login">Login</router-link>
+          <router-link class="botao" to="/loja">Loja</router-link>
+          <router-link class="botao" to="/sobre">Sobre nós</router-link>
+          <router-link class="botao" to="/contato">Contato</router-link>
+          <router-link class="botao" to="/login">Login</router-link>
         </ul>
       </nav>
     </header>
@@ -49,7 +49,7 @@ export default {
   
 
 <style>
-
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
 
 body,
 ul {
@@ -57,15 +57,28 @@ ul {
   padding: 0px;
 }
 
-.a {
+.bbc {
   color: white;
   text-decoration: none;
-  font-family: 'Bruno Ace', cursive;
+  font-family: 'Bruno Ace SC', cursive;
   font-size: 20px;
 }
 
-.a:hover {
-  background: rgba(0, 0, 0, 0.05);
+.botao {
+  color: white;
+  text-decoration: none;
+  font-family: 'Bruno Ace SC', cursive;
+  font-size: 20px;
+  border: 2px;
+  border-color: white;
+  border-style: groove;
+  margin-top: 15px;
+}
+
+.botao:hover {
+  background: white;
+  color: black;
+  transition: 0.7s;
 }
 
 #logo {
@@ -80,7 +93,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #415aca;
+  background: #000000;
 }
 
 #menu {
