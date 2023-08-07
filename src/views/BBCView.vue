@@ -1,6 +1,8 @@
-<script setup></script>
+<script setup>
+import slideBBC from '../components/slideBBC.vue';
+</script>
 
 <template>
-  <h1>BBC</h1>
-  <button @click="$router.push({name: 'bbc'})">BBC</button>
+
+  <slideBBC/>
 </template>
