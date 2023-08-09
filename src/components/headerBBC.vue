@@ -33,7 +33,6 @@ export default {
           aria-controls="menu"
           aria-expanded="false"
         >
-          Menu
           <span id="hamburger" aria-hidden="true"></span>
         </button>
         <ul id="menu" role="menu">
@@ -73,6 +72,7 @@ ul {
   border-color: white;
   border-style: groove;
   margin-top: 15px;
+  border-radius: 10px;
 }
 
 .botao:hover {
@@ -118,7 +118,7 @@ ul {
     width: 100%;
     top: 70px;
     right: 0px;
-    background: #e7e7e7;
+    background: #000000;
     transition: 0.6s;
     z-index: 1000;
     height: 0px;
@@ -133,7 +133,7 @@ ul {
   #menu a {
     padding: 1rem 0;
     margin: 0 1rem;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 2px solid rgba(255, 255, 255);
   }
   #btn-mobile {
     display: flex;
@@ -147,6 +147,7 @@ ul {
   #hamburger {
     border-top: 2px solid;
     width: 20px;
+    background-color: white;
   }
   #hamburger::after,
   #hamburger::before {

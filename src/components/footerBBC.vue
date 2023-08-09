@@ -9,10 +9,10 @@
                 <div class="footer-col">
                     <h4>Empresa</h4>
                     <ul>
-                        <li><a href="#"> Quem somos </a></li>
-                        <li><a href=""> nossos serviços </a></li>
-                        <li><a href=""> política de privacidade </a></li>
-                        <li><a href=""> programa de afiliados</a></li>
+                        <li><a href="#" class="palavraFot"> Quem somos </a></li>
+                        <li><a href="" class="palavraFot"> nossos serviços </a></li>
+                        <li><a href="" class="palavraFot"> política de privacidade </a></li>
+                        <li><a href="" class="palavraFot"> programa de afiliados</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -34,35 +34,26 @@
                         <li><a href="#">Endereço</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Se subescreva!</h4>
-                    <div class="form-sub">
-                        <form>
-                            <input type="email" placeholder="Digite o seu e-mail" required>
-                            <button>subscrever</button>
-                        </form>
-                    </div>
-
                     <div id="app" class="medias-socias">
                         <a href=""><i><font-awesome-icon icon="facebook" /></i></a>
                         <a href="#"> <i class="fa fa-instagram"></i> </a>
                         <a href="#"> <i class="fa fa-twitter"></i> </a>
                         <a href="#"> <i class="fa fa-linkedin"></i> </a>
                     </div>
-
                 </div>
             </div>
-        </div>
     </footer> 
 </template>
 <style scoped>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Mukta&family=Oswald&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
 footer{
     background-color: #000000;
     padding: 50px 0;
@@ -75,6 +66,8 @@ footer{
 .row-footer{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-col{
@@ -82,12 +75,13 @@ footer{
     padding: 0 15px;
 }
 .footer-col h4{
-    font-size: 22px;
+    font-size: 25px;
     color: white;
     margin-bottom: 20px;
     font-weight: 500;
     position: relative;
     text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
 }
 .footer-col ul{
     list-style: none;
@@ -103,6 +97,8 @@ footer{
     font-weight: 300;
     display: block;
     transition: all 0.3s ease;
+    font-family: 'Mukta', sans-serif;
+    font-size: 20px;
 }
 .footer-col ul li a:hover{
     color: #cecdcd;
@@ -139,7 +135,7 @@ footer{
     outline: none;
     border: 1px solid white;
     color: white;
-    background-color: #415aca;
+    background-color: #000000;
 }
 .footer-col .form-sub input::placeholder{
     color: white;

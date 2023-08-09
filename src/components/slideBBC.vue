@@ -31,7 +31,7 @@
           alt="Big Black Car"
         />
         <div class="carousel-caption d-none d-md-block">
-          <p>As melhores limousines de todos os tempos</p>
+          <p>As Mais Excelentes Limousines do Mercado!</p>
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="1000">
@@ -42,7 +42,7 @@
           alt="..."
         />
         <div class="carousel-caption d-none d-md-block">
-          <p>Maior conforto para sua viagem</p>
+          <p>Melhor Conforto Para sua Viagem!</p>
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="1000">
@@ -54,7 +54,7 @@
           alt="..."
         />
         <div class="carousel-caption d-none d-md-block">
-          <p>Colecione momentos</p>
+          <p>Momentos Memoráveis para Você!</p>
         </div>
       </div>
       <button
@@ -78,5 +78,11 @@
     </div>
   </div>
 </template>
-<style>
+<style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+p {
+  font-family: 'Oswald', sans-serif;
+  font-size: 35px;
+}
 </style>
