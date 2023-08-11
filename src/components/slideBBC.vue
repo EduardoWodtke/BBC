@@ -36,7 +36,7 @@
       </div>
       <div class="carousel-item" data-bs-interval="1000">
         <img
-          src="https://i.pinimg.com/236x/05/4a/ab/054aab5a53626288b8244101aa4c4455.jpg"
+          src="https://i.pinimg.com/originals/58/70/85/587085407059f9da8c754996c846f35a.jpg"
           class="d-block w-100"
           height="500"
           alt="..."
@@ -47,7 +47,7 @@
       </div>
       <div class="carousel-item" data-bs-interval="1000">
         <img
-          src="https://i.pinimg.com/236x/80/e4/09/80e409f9a5fee4b50eafe7fdb105c81b.jpg
+          src="https://www.gattilimousines.com.br/novo/wp-content/uploads/2015/06/WhatsApp-Image-20160531-14.jpg
           "
           class="d-block w-100"
           height="500"
@@ -85,4 +85,11 @@ p {
   font-family: 'Oswald', sans-serif;
   font-size: 35px;
 }
+img {
+  height: 630px;
+  border: 1px;
+  border-style: solid;
+  border-color: white;
+}
+
 </style>
