@@ -4,66 +4,66 @@ import { ref } from 'vue'
 const carros = ref([
   {
     id: 1,
-    nome: '',
+    nome: 'BABY BENTLEY',
     quantidade: 0,
-    preco: 0,
-    img: 'https://i.pinimg.com/564x/fd/59/69/fd596900a6cbf0943fd4862edc208a13.jpg'
+    preco: 2000.00,
+    img: 'https://www.citylimos.info/wp-content/uploads/2012/02/baby-bentley1.jpg'
   },
   {
     id: 2,
-    nome: '',
+    nome: 'NOVELTY',
     quantidade: 0,
-    preco: 0,
-    img:'https://www.google.com/url?sa=i&url=https%3A%2F%2Fkinglimousines.com.br%2Ffotos.asp%3Fid%3D2&psig=AOvVaw1zsoW7kCOHQ_7eOOmuSjl4&ust=1691863180346000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCID189CX1YADFQAAAAAdAAAAABAd'
+    preco: 750.00,
+    img:'https://images.noticiasautomotivas.com.br/img/f/limousine-9.jpg'
   },
   {
     id: 3,
-    nome: '',
+    nome: 'STRETCH',
     quantidade: 0,
-    preco: 0,
-    img:''
+    preco: 830.00,
+    img:'https://aluxurylimo.com/wp-content/uploads/2021/03/Lincoln_Stretch_Interior_2.jpg'
   },
   {
     id: 4,
-    nome: '',
+    nome: 'CHRYSLER 300C',
     quantidade: 0,
-    preco: 0,
-    img:''
+    preco: 900.00,
+    img:'https://affinitylimousines.com.au/wp-content/uploads/photo-gallery/Limo/Affinity%20Limousines%20-%20Chrysler%20Limo%20Hire%20Melbourne%20(28).jpg'
   },
   {
     id: 5,
-    nome: '',
+    nome: 'LINCOLN TOWN',
     quantidade: 0,
-    preco: 0,
-    img:''
+    preco: 1000.00,
+    img:'https://www.chicagomotorcars.com/imagetag/5514/main/l/Used-2007-Lincoln-Town-Car-Executive-STRETCH-LIMOUSINE.jpg'
   },
   {
     id: 6,
-    nome: '',
+    nome: 'HUMMER',
     quantidade: 0,
-    preco: 0,
-    img:''
+    preco: 680.00,
+    img:'https://www.kinglimousines.com.br/gerenciar/anexos/paginas/8/hummerb_2.jpg'
   },
   {
     id: 7,
-    nome: '',
+    nome: 'CADILLAC',
     quantidade: 0,
-    preco: 0,
-    img:''
+    preco: 950.00,
+    img:'https://exclusivalimusine.com.br/wp-content/uploads/2021/04/Limo-Cadilac-preta.jpg'
   },
   {
     id: 8,
-    nome: '',
+    nome: 'GRAND BLAZER',
     quantidade: 0,
-    preco: 0,
-    img:''
+    preco: 750.00,
+    img:'https://www.gattilimousines.com.br/novo/wp-content/uploads/2017/09/image.png'
   },
   {
     id: 9,
-    nome: '',
+    nome: 'LIMOUSINE PRETA',
     quantidade: 0,
-    preco: 0,
-    img:''
+    preco: 550.00,
+    img:'https://www.gattilimousines.com.br/novo/wp-content/uploads/2015/06/IMG_4462.jpg'
   }
 ])
 </script>

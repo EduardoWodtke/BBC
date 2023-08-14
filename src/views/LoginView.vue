@@ -36,7 +36,8 @@ const enviar = ref(false)
         <button class="loginbtn" @click="$router.push({ name: 'login' })">Entrar</button>
       </form>
       <hr>
-      <button class="cadbtn" @click="gamer">Cadastre-se</button>
+      <p>Não possui cadastro?</p>
+      <router-link class="btn" to="/cadastro">Cadastre-se!</router-link>
     </div>
   </div>
 </template>
