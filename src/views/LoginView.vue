@@ -37,7 +37,7 @@ const enviar = ref(false)
       </form>
       <hr>
       <p>Não possui cadastro?</p>
-      <router-link class="btn" to="/cadastro">Cadastre-se!</router-link>
+      <router-link class="cadbtn" to="/cadastro">Cadastre-se!</router-link>
     </div>
   </div>
 </template>
@@ -61,8 +61,8 @@ const enviar = ref(false)
   background-color: rgb(255, 255, 255);
   box-shadow: 1px 1px 20px black;
   font-family: 'Play', sans-serif;
-  margin-top: 117px;
-  margin-bottom: 117px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 p {
   padding-top: 5px;
@@ -78,6 +78,19 @@ select {
 }
 
 .loginbtn {
+  margin-top: 17px;
+  padding: 8px;
+  font-weight: bold;
+  border-radius: 4px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-family: 'Play', sans-serif;
+  border-color: rgb(230, 230, 230);
+  border-style:groove;
+}
+
+.cadbtn {
   margin-top: 17px;
   padding: 8px;
   font-weight: bold;

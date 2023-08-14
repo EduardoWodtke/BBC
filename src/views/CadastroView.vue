@@ -19,7 +19,7 @@ const enviar = ref(false)
       <form @submit.prevent="enviar = !enviar">
         <div class="forms">
           <h1>Cadastro</h1>
-
+          <hr />
           <p>Nome:</p>
           <input
             type="text"
@@ -90,11 +90,10 @@ const enviar = ref(false)
             @change="handleFileUpload($event)"
             placeholder="Insira uma foto da sua habiliração"
           />
-
-          <p>Li e aceito os termos</p>
-          <label for="aceitaTermos">Aceito os termos</label>
-          <input type="checkbox" v-model="aceitaTermos" />
-          <br>
+          <hr />
+          <label for="aceitaTermos">Li e aceito os termos</label>
+          <input class ="caixa" type="checkbox" v-model="aceitaTermos" />
+          <br />
           <button type="submit">Enviar</button>
         </div>
       </form>
@@ -104,19 +103,24 @@ const enviar = ref(false)
   </div>
 </template>
 <style>
-.main{
+.main {
   display: grid;
   grid-template-columns: auto;
   align-items: center;
   justify-content: center;
   padding: 25px;
 }
-.formulario{
-  border: 5px solid black;
-  border-radius: 30px;
-  padding: 10px 50px 10px 50px; 
+.formulario {
+  border: 7px solid rgb(0, 0, 0);
+  border-radius: 20px;
+  border-style: outset;
+  padding: 10px 50px 10px 50px;
   text-align: center;
-  background-color: rgb(217, 217, 217);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1px 1px 20px black;
+  font-family: 'Play', sans-serif;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 p {
   padding-top: 5px;
@@ -129,5 +133,4 @@ input {
 select {
   border-radius: 7px;
 }
-
 </style>
