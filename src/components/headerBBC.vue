@@ -24,7 +24,7 @@ export default {
 
 <template>
     <header id="header">
-      <router-link class="bbc" to="/">BBC</router-link>
+      <router-link class="bbc" to="/"><h2>BBC</h2></router-link>
       <nav id="nav">
         <button
           aria-label="Abrir Menu"
