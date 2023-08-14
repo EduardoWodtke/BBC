@@ -94,26 +94,28 @@ const enviar = ref(false)
           <label for="aceitaTermos">Li e aceito os termos</label>
           <input class ="caixa" type="checkbox" v-model="aceitaTermos" />
           <br />
-          <button type="submit">Enviar</button>
+          <button class="enviar" type="submit">Enviar</button>
         </div>
       </form>
-
-      <button @click="$router.push({ name: 'login' })">Login</button>
     </div>
   </div>
 </template>
-<style>
+<style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
 .main {
   display: grid;
   grid-template-columns: auto;
   align-items: center;
   justify-content: center;
   padding: 25px;
+  background-color: rgb(220, 220, 220);
+    font-family: 'Play', sans-serif;
 }
 .formulario {
   border: 7px solid rgb(0, 0, 0);
   border-radius: 20px;
-  border-style: outset;
+  border-style: groove; 
   padding: 10px 50px 10px 50px;
   text-align: center;
   background-color: rgb(255, 255, 255);
@@ -132,5 +134,18 @@ input {
 
 select {
   border-radius: 7px;
+}
+
+.enviar {
+  margin-top: 17px;
+  padding: 8px;
+  font-weight: bold;
+  border-radius: 4px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-family: 'Play', sans-serif;
+  border-color: rgb(230, 230, 230);
+  border-style:groove;
 }
 </style>

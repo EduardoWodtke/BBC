@@ -3,8 +3,8 @@
 <template>
   <div class="contato">
 
-    <h1>contato | Ajuda?</h1>
-    <p>
+    <h1>Contato</h1>
+    <p class="p">
 
       zap do vitin: 6969696969 <br>
       face do alisa : cum slayer <br>
@@ -17,50 +17,61 @@
 
   </div>
 
-    <div>
+    <h1>Contate-nos</h1>
 
       <form action="">
 
-        <h1>Login</h1>
-          <hr>
-          <p>Email:</p>
-          <input
-            type="email"
-            v-model.trim="email"
-            minlength="12"
-            placeholder="Informe seu email"
-            autocomplete="on"
-            required
-          />
+        <h2>Precisa de ajuda?</h2>
 
-          <p>Senha:</p>
-          <input
-            type="passowrd"
-            v-model.trim="senha"
-            minlength="6"
-            placeholder="Digite sua senha"
-            required
-          />
+        <hr>
+
+        <p>
+
+          Nome
+
+        </p>
+
+        <input type="text" v-model="name" placeholder="Nome">
+
+        <br>
+
+        <p>
+
+          Email
+
+        </p>
+
+        <input type="email" v-model="email" placeholder="BBC@bbc.com">
+
+        <br>
+
+        <p>
+
+          Ajuda no que?
+
+        </p>
+
+        <textarea v-model="texto" cols="30"></textarea>
+        
+        <br>
 
       </form>
-
-    </div>
-  
 </template>
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
 
-h1 {
+h1,h2 {
 
   font-family: 'Bruno Ace SC', cursive;
 
 }
 
 
-p {
+.p {
   font-size: 20px;
+  font-family: 'Play', sans-serif;
 }
 .contato {
 
@@ -71,9 +82,16 @@ p {
 
 form {
   border: black 5px solid;
-  background-color: gray;
-  border-radius: 100px;
+  background-color: rgb(206, 206, 206);
+  border-radius: 50px;
   text-align: center;
+  width: 500px;
+  padding: 20px;
 }
 
+p {
+
+  font-size: 15px;
+  font-family: 'Play', sans-serif;
+}
 </style>

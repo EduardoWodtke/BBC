@@ -1,50 +1,66 @@
 <script>
+import LoginView from '../views/LoginView.vue';
 export default {
-  mounted() {
-    const btnMobile = document.getElementById('btn-mobile');
-    const nav = document.getElementById('nav');
-
-    function toggleMenu(event) {
-      if (event.type === 'touchstart') event.preventDefault();
-      nav.classList.toggle('active');
-      const active = nav.classList.contains('active');
-      event.currentTarget.setAttribute('aria-expanded', active);
-      if (active) {
-        event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
-      } else {
-        event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
-      }
-    }
-
-    btnMobile.addEventListener('click', toggleMenu);
-    btnMobile.addEventListener('touchstart', toggleMenu);
-  },
+    mounted() {
+        const btnMobile = document.getElementById('btn-mobile');
+        const nav = document.getElementById('nav');
+        function toggleMenu(event) {
+            if (event.type === 'touchstart')
+                event.preventDefault();
+            nav.classList.toggle('active');
+            const active = nav.classList.contains('active');
+            event.currentTarget.setAttribute('aria-expanded', active);
+            if (active) {
+                event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+            }
+            else {
+                event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
+            }
+        }
+        btnMobile.addEventListener('click', toggleMenu);
+        btnMobile.addEventListener('touchstart', toggleMenu);
+    },
+    components: { LoginView }
 };
 </script>
 
 <template>
-    <header id="header">
-      <router-link class="bbc" to="/"><h2>BBC</h2></router-link>
-      <nav id="nav">
-        <button
-          aria-label="Abrir Menu"
-          id="btn-mobile"
-          aria-haspopup="true"
-          aria-controls="menu"
-          aria-expanded="false"
-        >
-          <span id="hamburger" aria-hidden="true"></span>
+  <header id="header">
+    <router-link class="bbc" to="/">
+      <h2>BBC</h2>
+    </router-link>
+    <nav id="nav">
+      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+        <span id="hamburger" aria-hidden="true"></span>
+      </button>
+      <ul id="menu" role="menu">
+        <router-link class="botao" to="/loja">Loja</router-link>
+        <router-link class="botao" to="/sobre">Sobre nós</router-link>
+        <router-link class="botao" to="/contato">Contato</router-link>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          Login
         </button>
-        <ul id="menu" role="menu">
-          <router-link class="botao" to="/loja">Loja</router-link>
-          <router-link class="botao" to="/sobre">Sobre nós</router-link>
-          <router-link class="botao" to="/contato">Contato</router-link>
-          <router-link class="botao" to="/login">Login</router-link>
-        </ul>
-      </nav>
-    </header>
-    
-  </template>
+      </ul>
+
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+      
+            <div class="modal-body">
+              <LoginView/>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+</template>
   
 
 <style>
@@ -125,16 +141,19 @@ ul {
     visibility: hidden;
     overflow-y: hidden;
   }
+
   #nav.active #menu {
     height: calc(100vh - 70px);
     visibility: visible;
     overflow-y: auto;
   }
+
   #menu a {
     padding: 1rem 0;
     margin: 0 1rem;
     border-bottom: 2px solid rgba(255, 255, 255);
   }
+
   #btn-mobile {
     display: flex;
     padding: 0.5rem 1rem;
@@ -144,11 +163,13 @@ ul {
     cursor: pointer;
     gap: 0.5rem;
   }
+
   #hamburger {
     border-top: 2px solid;
     width: 20px;
     background-color: white;
   }
+
   #hamburger::after,
   #hamburger::before {
     content: '';
@@ -160,12 +181,15 @@ ul {
     transition: 0.3s;
     position: relative;
   }
+
   #nav.active #hamburger {
     border-top-color: transparent;
   }
+
   #nav.active #hamburger::before {
     transform: rotate(135deg);
   }
+
   #nav.active #hamburger::after {
     transform: rotate(-135deg);
     top: -7px;

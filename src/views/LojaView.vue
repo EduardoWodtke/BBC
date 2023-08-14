@@ -74,7 +74,7 @@ const carros = ref([
         <h2>{{ carro.id }} - {{ carro.nome }}</h2>
         <img :src="carro.img" alt="carro.img" />
         <br />
-        <h6>Preço: {{ carro.preco }} BRL</h6>
+        <h6>Preço: R${{ carro.preco }}</h6>
         <button type="button" @click="addCarrinho(carro)" class="button">Alugar</button>
       </div>
     </div>
