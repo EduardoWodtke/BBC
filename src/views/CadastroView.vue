@@ -42,7 +42,7 @@ const enviar = ref(false)
 
           <p>Senha:</p>
           <input
-            type="passowrd"
+            type="password"
             v-model.trim="senha"
             minlength="6"
             placeholder="Digite sua senha"
@@ -51,7 +51,7 @@ const enviar = ref(false)
 
           <p>confirmar Senha:</p>
           <input
-            type="passowrd"
+            type="password"
             v-model.trim="confSenha"
             minlength="6"
             placeholder="Confirme sua senha"

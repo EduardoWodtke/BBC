@@ -1,61 +1,68 @@
 <script setup></script>
 
 <template>
-  <div class="contato">
+
+  <div class="corpo">
 
     <h1>Contato</h1>
+
+    <div class="contato form">
+      
     <p class="p">
-
-      zap do vitin: 6969696969 <br>
-      face do alisa : cum slayer <br>
-      email meu: cp@gmail.com <br>
-      git da eve: hevilym <br>
-      insta do eduarado: cum eater <br>
-      mine da maria : jenifger
-
+      
+      Telefone: +55 (019) 96946-6051 <br>
+      Email: BigBlackCarsBBC@gmail.com <br>
+      Instagram: @BBCOfc <br>
+      endereço: Enzo Marginal, 12715 - Orsk, Campinas - SP, 12245-903 <br>
+      
     </p>
 
   </div>
+  
+  <h1>Contate-nos</h1>
 
-    <h1>Contate-nos</h1>
-
-      <form action="">
-
+  <div class="formu">
+    
+    <form action="" class="form">
+      
         <h2>Precisa de ajuda?</h2>
-
+        
         <hr>
-
+        
         <p>
-
+          
           Nome
-
+          
         </p>
 
         <input type="text" v-model="name" placeholder="Nome">
-
+        
         <br>
-
+        
         <p>
-
+          
           Email
-
+          
         </p>
-
+        
         <input type="email" v-model="email" placeholder="BBC@bbc.com">
-
+        
         <br>
-
+        
         <p>
-
+          
           Ajuda no que?
-
+          
         </p>
 
         <textarea v-model="texto" cols="30"></textarea>
         
         <br>
-
+        
       </form>
+    </div>
+      
+    </div>
 </template>
 
 <style scoped>
@@ -77,21 +84,32 @@ h1,h2 {
 
   text-align: center;
   font-family: 'Play', sans-serif;
+  padding: 10px;
 
 }
 
-form {
+.form {
   border: black 5px solid;
   background-color: rgb(206, 206, 206);
   border-radius: 50px;
   text-align: center;
   width: 500px;
-  padding: 20px;
+  padding: 30px;
+  box-shadow: 10px 10px 10px 0px;
 }
 
 p {
 
   font-size: 15px;
   font-family: 'Play', sans-serif;
+}
+
+.corpo {
+  display: grid;
+  justify-items: center;
+}
+
+.formu {
+  padding: 30px;
 }
 </style>

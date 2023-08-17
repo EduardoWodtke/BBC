@@ -2,8 +2,8 @@
 
 <template>
   <div>
+    <img src="../components/Imagens/BBC-Slide.jpg" altfile="..." />
     <div class="sobre">
-      <img src="../components/Imagens/BBC-Slide.jpg" altfile="..." />
       <hr>
       <h1>BIG BLACK CARS</h1>
       <hr />
@@ -32,6 +32,7 @@ p {
   text-align: justify;
   font-family: 'Bruno Ace SC', cursive;
   padding: 10px;
+  max-width: 1000px;
 }
 
 h1 {
@@ -42,5 +43,10 @@ h1 {
 img {
   height: 550px;
   width: 100%;
+}
+
+.sobre {
+  display: grid;
+  justify-content:center
 }
 </style>

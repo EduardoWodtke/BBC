@@ -1,27 +1,25 @@
 <script>
-import LoginView from '../views/LoginView.vue';
+import LoginView from '../views/LoginView.vue'
 export default {
-    mounted() {
-        const btnMobile = document.getElementById('btn-mobile');
-        const nav = document.getElementById('nav');
-        function toggleMenu(event) {
-            if (event.type === 'touchstart')
-                event.preventDefault();
-            nav.classList.toggle('active');
-            const active = nav.classList.contains('active');
-            event.currentTarget.setAttribute('aria-expanded', active);
-            if (active) {
-                event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
-            }
-            else {
-                event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
-            }
-        }
-        btnMobile.addEventListener('click', toggleMenu);
-        btnMobile.addEventListener('touchstart', toggleMenu);
-    },
-    components: { LoginView }
-};
+  mounted() {
+    const btnMobile = document.getElementById('btn-mobile')
+    const nav = document.getElementById('nav')
+    function toggleMenu(event) {
+      if (event.type === 'touchstart') event.preventDefault()
+      nav.classList.toggle('active')
+      const active = nav.classList.contains('active')
+      event.currentTarget.setAttribute('aria-expanded', active)
+      if (active) {
+        event.currentTarget.setAttribute('aria-label', 'Fechar Menu')
+      } else {
+        event.currentTarget.setAttribute('aria-label', 'Abrir Menu')
+      }
+    }
+    btnMobile.addEventListener('click', toggleMenu)
+    btnMobile.addEventListener('touchstart', toggleMenu)
+  },
+  components: { LoginView }
+}
 </script>
 
 <template>
@@ -30,30 +28,50 @@ export default {
       <h2>BBC</h2>
     </router-link>
     <nav id="nav">
-      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+      <button
+        aria-label="Abrir Menu"
+        id="btn-mobile"
+        aria-haspopup="true"
+        aria-controls="menu"
+        aria-expanded="false"
+      >
         <span id="hamburger" aria-hidden="true"></span>
       </button>
       <ul id="menu" role="menu">
         <router-link class="botao" to="/loja">Loja</router-link>
         <router-link class="botao" to="/sobre">Sobre nós</router-link>
         <router-link class="botao" to="/contato">Contato</router-link>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        <button type="button" class="botao" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
           Login
         </button>
       </ul>
 
       <!-- Modal -->
-      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
         <div class="modal-dialog">
           <div class="modal-content">
-      
             <div class="modal-body">
-              <LoginView/>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="close"
+              ></button
+              ><br />
+              <LoginView />
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Enviar</button>
+              <p>Não possui cadastro?</p>
+              <router-link class="cadbtn" to="/cadastro">Cadastre-se!</router-link> <br />
+              <button class="loginbtn" @click="$router.push({ name: 'login' })">Entrar</button>
             </div>
           </div>
         </div>
@@ -61,11 +79,37 @@ export default {
     </nav>
   </header>
 </template>
-  
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
-
+.cadbtn {
+  margin-top: 17px;
+  padding: 8px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-family: 'Play', sans-serif;
+  text-decoration: none;
+}
+.loginbtn {
+  margin-top: 17px;
+  padding: 8px;
+  font-weight: bold;
+  border-radius: 4px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-family: 'Play', sans-serif;
+  border-color: rgb(230, 230, 230);
+  border-style: groove;
+}
+.modal-dialog {
+  border: 7px solid rgb(0, 0, 0);
+  border-radius: 20px;
+  border-style: outset;
+  box-shadow: 1px 1px 20px black;
+}
 body,
 ul {
   margin: 0px;
@@ -77,6 +121,7 @@ ul {
   text-decoration: none;
   font-family: 'Bruno Ace SC', cursive;
   font-size: 20px;
+  margin-top: 9px;
 }
 
 .botao {
@@ -89,6 +134,7 @@ ul {
   border-style: groove;
   margin-top: 15px;
   border-radius: 10px;
+  background-color: black;
 }
 
 .botao:hover {

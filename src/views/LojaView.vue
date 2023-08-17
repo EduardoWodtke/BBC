@@ -21,7 +21,7 @@ const carros = ref([
     nome: 'STRETCH',
     quantidade: 0,
     preco: 830.00,
-    img:'https://aluxurylimo.com/wp-content/uploads/2021/03/Lincoln_Stretch_Interior_2.jpg'
+    img:'https://cdn0.casamentos.com.br/vendor/9441/3_2/960/jpg/limousine-preta-peugeot_13_179441.jpeg'
   },
   {
     id: 4,
