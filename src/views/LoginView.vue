@@ -11,7 +11,7 @@ const enviar = ref(false)
     <form @submit.prevent="enviar = !enviar">
       <div class="forms">
         <h1>Login</h1>
-        <hr />
+        <hr>
         <p>Email:</p>
         <input
           type="email"
@@ -36,6 +36,26 @@ const enviar = ref(false)
 </template>
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+h1 {
+  font-family: 'play', sans-serif;
+  font-size: 40px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  justify-items: center;
+}
+.enviar {
+  margin-top: 17px;
+  padding: 8px;
+  font-weight: bold;
+  border-radius: 4px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-family: 'Play', sans-serif;
+  border-color: rgb(230, 230, 230);
+  border-style:groove;
+}
 .formulario {
   padding: 10px 50px 10px 50px;
   text-align: center;

@@ -49,7 +49,7 @@ const enviar = ref(false)
             required
           />
 
-          <p>confirmar Senha:</p>
+          <p>Confirmar Senha:</p>
           <input
             type="password"
             v-model.trim="confSenha"
@@ -130,6 +130,7 @@ p {
 
 input {
   border-radius: 7px;
+  text-align: center;
 }
 
 select {

@@ -63,14 +63,13 @@ export default {
                 type="button"
                 class="btn-close"
                 data-bs-dismiss="modal"
-                aria-label="close"
-              ></button
-              ><br />
+                aria-label="Close"
+              ></button>
               <LoginView />
             </div>
             <div class="modal-footer">
               <p>Não possui cadastro?</p>
-              <router-link class="cadbtn" to="/cadastro">Cadastre-se!</router-link> <br />
+              <router-link class="cadbtn" to="/cadastro">Cadastre-se!</router-link>
               <button class="loginbtn" @click="$router.push({ name: 'login' })">Entrar</button>
             </div>
           </div>
@@ -82,6 +81,18 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: var(--bs-modal-color);
+    pointer-events: auto;
+    background-color: var(--bs-modal-bg);
+    background-clip: padding-box;
+    border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+    outline: 0;
+}
 .cadbtn {
   margin-top: 17px;
   padding: 8px;
@@ -90,8 +101,10 @@ export default {
   background-color: rgb(255, 255, 255);
   cursor: pointer;
   font-family: 'Play', sans-serif;
+  border-color: rgb(230, 230, 230);
   text-decoration: none;
 }
+
 .loginbtn {
   margin-top: 17px;
   padding: 8px;
@@ -105,9 +118,9 @@ export default {
   border-style: groove;
 }
 .modal-dialog {
-  border: 7px solid rgb(0, 0, 0);
+  border: 20px solid rgb(0, 0, 0);
   border-radius: 20px;
-  border-style: outset;
+  border-style: groove;
   box-shadow: 1px 1px 20px black;
 }
 body,

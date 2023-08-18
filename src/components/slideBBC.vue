@@ -87,12 +87,13 @@ p {
 
 #carousel {
   max-width: 100%;
-  margin: auto;
 }
 
 .carousel-item img {
-  height: 500px;
-  object-fit: cover;
+  height: 600px;
+  border: 20px;
+  border-color: black;
+  border-style: groove;
 }
 
 .carousel-caption p {

@@ -2,8 +2,8 @@
 
 <template>
   <div>
-    <img src="../components/Imagens/BBC-Slide.jpg" altfile="..." />
     <div class="sobre">
+      <img src="../components/Imagens/BBC-Slide.jpg" altfile="..." /> 
       <hr>
       <h1>BIG BLACK CARS</h1>
       <hr />
@@ -43,10 +43,14 @@ h1 {
 img {
   height: 550px;
   width: 100%;
+  
 }
 
 .sobre {
   display: grid;
-  justify-content:center
+  justify-content:center;
+  border: 20px;
+  border-color: black;
+  border-style: groove;
 }
 </style>
