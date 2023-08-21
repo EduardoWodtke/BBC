@@ -70,7 +70,7 @@ export default {
             <div class="modal-footer">
               <p>Não possui cadastro?</p>
               <router-link class="cadbtn" to="/cadastro">Cadastre-se!</router-link>
-              <button class="loginbtn" @click="$router.push({ name: 'login' })">Entrar</button>
+              <button class="loginbtn" @click="$router.push({ name: 'bbc' })">Entrar</button>
             </div>
           </div>
         </div>
@@ -91,6 +91,7 @@ export default {
     background-color: var(--bs-modal-bg);
     background-clip: padding-box;
     border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+    border-radius: 1px;
     outline: 0;
 }
 .cadbtn {
@@ -120,7 +121,7 @@ export default {
 .modal-dialog {
   border: 20px solid rgb(0, 0, 0);
   border-radius: 20px;
-  border-style: groove;
+  border-style: ridge;
   box-shadow: 1px 1px 20px black;
 }
 body,

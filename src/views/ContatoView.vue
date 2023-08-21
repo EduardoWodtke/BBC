@@ -55,12 +55,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
 
-h1,
-h2 {
+h1 {
   font-family: 'Bruno Ace SC', cursive;
   margin-top: 20px;
   text-align: center;
   color: white;
+}
+
+h2 {
+  font-family: 'Bruno Ace SC', cursive;
+  margin-top: 20px;
+  text-align: center;
+  color: black;
 }
 
 .p {

@@ -80,17 +80,26 @@ const enviar = ref(false)
             placeholder="Insira uma foto da sua habiliração"
           />
           <hr />
-          <label for="aceitaTermos">Li e aceito os termos</label>
-          <input class ="caixa" type="checkbox" v-model="aceitaTermos" />
+          <label for="aceitaTermos"
+            ><a
+              href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV_4mnr1iJB6yRO_TC2DQgy3NBepj84mn5J4sKpEnqHjueRwJQi7vv2WshyX8BC41YleI&usqp=CAU"
+              >Li e aceito os termos</a
+            ></label
+          >
           <br />
-          <button class="enviar" type="submit">Enviar</button>
+          <input type="checkbox" v-model="aceitaTermos" />
+          <br />
+          <router-link class="enviar" to="/"> Entrar
+          </router-link>
         </div>
       </form>
     </div>
   </div>
 </template>
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
 
 .main {
   display: grid;
@@ -99,30 +108,38 @@ const enviar = ref(false)
   justify-content: center;
   padding: 25px;
   background-color: rgb(220, 220, 220);
-  font-family: 'Play', sans-serif;
   background-image: url('https://img.freepik.com/vetores-gratis/padrao-de-grade-de-losango-dourado-sem-costura-em-fundo-preto_53876-97589.jpg?w=1480&t=st=1692629059~exp=1692629659~hmac=cb1a6784f9b8a483599a8b16024b00b0355272bf03466cbbcb5f137b23634742');
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  border: 20px;
+  border-style: groove;
+  border-color: black;
 }
+
 .formulario {
   border: 7px solid rgb(0, 0, 0);
   border-radius: 20px;
-  border-style: groove; 
+  border-style: groove;
   padding: 10px 50px 10px 50px;
   text-align: center;
   background-color: rgb(255, 255, 255);
   box-shadow: 1px 1px 20px black;
-  font-family: 'Play', sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
 p {
   padding-top: 5px;
+  font-size: 18px;
+  margin-top: 5px;
+  font-family: 'Bebas Neue', sans-serif;
 }
 
 input {
   border-radius: 7px;
   text-align: center;
+  font-family: 'Play', sans-serif;
 }
 
 select {
@@ -139,6 +156,12 @@ select {
   cursor: pointer;
   font-family: 'Play', sans-serif;
   border-color: rgb(230, 230, 230);
-  border-style:groove;
+  border-style: groove;
+}
+
+h1 {
+  font-size: 35px;
+  font-family: 'Bruno Ace SC', cursive;
+  margin-top: 7px;
 }
 </style>
