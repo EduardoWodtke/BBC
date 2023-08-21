@@ -26,7 +26,7 @@
       <div class="carousel-item active" data-bs-interval="5000">
         <!-- Alterado para 5000ms -->
         <img
-          src="https://exclusivalimusine.com.br/wp-content/uploads/2021/04/Limo-Cadilac-preta.jpg"
+          src="https://i.pinimg.com/564x/b6/53/d3/b653d36f36d6625bf3d6e0fbbb4094d3.jpg"
           class="d-block w-100"
           height="500"
           alt="Big Black Car"
@@ -90,7 +90,7 @@ p {
 }
 
 .carousel-item img {
-  height: 600px;
+  height: 650px;
   border: 20px;
   border-color: black;
   border-style: groove;

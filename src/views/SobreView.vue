@@ -33,12 +33,15 @@ p {
   font-family: 'Bruno Ace SC', cursive;
   padding: 10px;
   max-width: 1000px;
+  color: white;
 }
 
 h1 {
   font-size: 40px;
   text-align: center;
   font-family: 'Bruno Ace SC', cursive;
+  color: white
+  ;
 }
 img {
   height: 550px;

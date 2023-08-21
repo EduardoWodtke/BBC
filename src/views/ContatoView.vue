@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+
+</script>
 
 <template>
   <div class="corpo">
@@ -40,7 +42,7 @@
         
         <p>Ajuda no que?</p>
         
-        <textarea v-model="texto" cols="30"></textarea>
+        <textarea v-model="texto" cols="30" rows="5"></textarea>
         
         <br />
       </form>
@@ -58,6 +60,7 @@ h2 {
   font-family: 'Bruno Ace SC', cursive;
   margin-top: 20px;
   text-align: center;
+  color: white;
 }
 
 .p {
@@ -104,6 +107,7 @@ p {
   border: 20px;
   border-color: black;
   border-style: groove;
+  
 }
 
 .formu {

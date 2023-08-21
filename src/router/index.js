@@ -6,6 +6,7 @@ import ContatoView from '../views/ContatoView.vue'
 import LoginView from '../views/LoginView.vue'
 import CadastroView from '../views/CadastroView.vue'
 import AlugarView from '../views/AlugarView.vue'
+import PagamentoView from '../views/PagamentoView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -46,6 +47,12 @@ const router = createRouter({
       component: AlugarView,
       props: true
     },
+    {
+      path: '/pagamento/:id',
+      name: 'pagamento',
+      component: PagamentoView,
+      props: true
+    }
   ]
   
 })

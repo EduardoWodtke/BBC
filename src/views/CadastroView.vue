@@ -6,7 +6,6 @@ const email = ref('')
 const senha = ref('')
 const confSenha = ref('')
 const dataNascimento = ref(0)
-const endereco = ref('')
 const rendaMensal = ref('')
 const aceitaTermos = ref(false)
 
@@ -61,18 +60,8 @@ const enviar = ref(false)
           <p>Data de Nascimento:</p>
           <input type="date" v-model="dataNascimento" autocomplete="on" required />
 
-          <p>Endereço:</p>
-          <input
-            type="text"
-            v-model.trim="endereco"
-            minlength="10"
-            placeholder="Informe seu endereço"
-            autocomplete="on"
-            required
-          />
-
           <p>Renda Mensal:</p>
-          <label for="rendaMensal">Renda</label>
+          <label for="rendaMensal"></label>
           <select v-model="rendaMensal">
             <option value="-">-</option>
             <option value="< R$1.320">até R$1.320</option>
@@ -110,7 +99,10 @@ const enviar = ref(false)
   justify-content: center;
   padding: 25px;
   background-color: rgb(220, 220, 220);
-    font-family: 'Play', sans-serif;
+  font-family: 'Play', sans-serif;
+  background-image: url('https://img.freepik.com/vetores-gratis/padrao-de-grade-de-losango-dourado-sem-costura-em-fundo-preto_53876-97589.jpg?w=1480&t=st=1692629059~exp=1692629659~hmac=cb1a6784f9b8a483599a8b16024b00b0355272bf03466cbbcb5f137b23634742');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 .formulario {
   border: 7px solid rgb(0, 0, 0);

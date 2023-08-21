@@ -1,100 +1,120 @@
 <script setup>
-import { onMounted, ref } from 'vue';
+import { onMounted, ref } from 'vue'
 import { useRoute } from 'vue-router'
 
 const route = useRoute()
 
-import { getCarroById} from '@/_data/carros.js'
+import { getCarroById } from '@/_data/carros.js'
 
 const carro = ref({})
 
 onMounted(() => {
-    carro.value = getCarroById(route.params.id)
+  carro.value = getCarroById(route.params.id)
 })
-
 </script>
 
 <template>
-  <main class="corpo">  
+  <main class="corpo">
     <div class="imagemLimo">
-        <img :src="carro.img" alt="">
+      <h1 class="nomebrabo">{{ carro.nome }}</h1>
+      <hr>
+      <img :src="carro.img" alt="" />
     </div>
-    
+
     <div class="infos">
-
-        <h1>Informações</h1>
-
-        <p>
-           {{carro.info}}
-        </p>
-
+      <h1>Informações</h1>
+      <hr />
+      <p>
+        {{ carro.info }}
+      </p>
     </div>
 
     <div class="preco">
-
-        <h1>
-            R${{carro.preco}}
-        </h1>
-
+      <h1>R${{ carro.preco }}</h1>
     </div>
 
-
-    <div class="botaoalug">
-
-        <button>
-            <h1>Alugar</h1>
-        </button>
-
+    <div class="botaoalugar">
+      <router-link class="botao" to="/Pagamento">PAGAMENTO</router-link>
     </div>
-
   </main>
 </template>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+h1 {
+    font-family: 'Bruno Ace SC', cursive;
+    color: white;
+}
+
+.nomebrabo {
+    font-family: 'Play', sans-serif;
+    color: white;
+    font-size: 30px;
+}
 
 .corpo {
-
-    display: grid;
-    padding-top: 100px;
-    padding-left: 200px;
-    padding-bottom: 100px;
-    padding-right: 200px;
-    grid-template-columns: auto auto;
-    gap: 100px;
-    justify-content: center;
-    text-align: center;
-
+  display: grid;
+  padding-top: 100px;
+  padding-left: 200px;
+  padding-bottom: 100px;
+  padding-right: 200px;
+  grid-template-columns: auto auto;
+  gap: 100px;
+  justify-content: center;
+  text-align: center;
+  border: 20px;
+  border-style: groove;
+  border-color: white;
 }
 
 .imagemLimo {
-    background-color: black;
-    padding: 50px;
-    border-radius: 50px;
-    border: 5px gray solid;
-    justify-content: center;
-    width: 500px;
-    box-shadow: black 10px 10px 10px 0px;
+  background-color: rgb(30, 30, 30);
+  padding: 50px;
+  border-radius: 10px;
+  border: 5px rgb(255, 255, 255) solid;
+  justify-content: center;
+  width: 500px;
+  box-shadow: rgb(0, 0, 0) 10px 10px 10px 0px;
 }
 
 img {
-    width: 400px;
+  width: 400px;
+  border-radius: 10px;
 }
 
 .infos {
-    max-width: 500px;
+  max-width: 500px;
+  border: 5px black groove;
+  border-radius: 10px;
+  padding: 30px;
+  background-color: rgb(99, 99, 99);
+  box-shadow: 10px 10px 0px 0px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  color: white;
 }
 
-button {
-    background-color: black;
-    color: white;
-    border: 3px gray solid;
-    border-radius: 20px;
-}
 
-button:hover {
-    transition: 0.7s;
-    background-color: white;
-    color: black;
-}
 
+.botao:hover {
+  background-color: #fff;
+  color: black;
+  border-color: black;
+}
+.botao {
+  color: white;
+  text-decoration: none;
+  font-family: 'Bruno Ace SC', cursive;
+  font-size: 30px;
+  border: 2px;
+  padding: 15px;
+  border-color: white;
+  border-style: groove;
+  margin-top: 15px;
+  border-radius: 10px;
+  background-color: black;
+}
 </style>
