@@ -1,36 +1,17 @@
 <template>
   <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-indicators">
-      <button
-        type="button"
-        data-bs-target="#carousel"
-        data-bs-slide-to="0"
-        class="active"
-        aria-current="true"
-        aria-label="Slide 1"
-      ></button>
-      <button
-        type="button"
-        data-bs-target="#carousel"
-        data-bs-slide-to="1"
-        aria-label="Slide 2"
-      ></button>
-      <button
-        type="button"
-        data-bs-target="#carousel"
-        data-bs-slide-to="2"
-        aria-label="Slide 3"
-      ></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="5000">
         <!-- Alterado para 5000ms -->
         <img
-          src="https://i.pinimg.com/564x/b6/53/d3/b653d36f36d6625bf3d6e0fbbb4094d3.jpg"
-          class="d-block w-100"
-          height="500"
-          alt="Big Black Car"
-        />
+          src="https://img.freepik.com/fotos-gratis/carros-de-luxo-aceleram-em-predios-modernos-ao-entardecer-com-ia-generativa_188544-8048.jpg?w=996&t=st=1692647098~exp=1692647698~hmac=510f03157996275ad4126bd533491ca61e0329aab376bcd80d2a012cd578310d"
+          class="d-block w-100" height="500" alt="Big Black Car" />
         <div class="carousel-caption d-none d-md-block">
           <p>As Mais Excelentes Limousines do Mercado!</p>
         </div>
@@ -38,11 +19,8 @@
       <div class="carousel-item" data-bs-interval="5000">
         <!-- Alterado para 5000ms -->
         <img
-          src="https://i.pinimg.com/originals/58/70/85/587085407059f9da8c754996c846f35a.jpg"
-          class="d-block w-100"
-          height="500"
-          alt="..."
-        />
+          src="https://img.freepik.com/fotos-premium/vip-pessoas-chegando-limusine-no-fundo-do-sol-conceito-de-transporte-de-viagem-sucesso-nos-negocios-luxo-elegante-generative-ai_155807-13763.jpg?w=996"
+          class="d-block w-100" height="500" alt="..." />
         <div class="carousel-caption d-none d-md-block">
           <p>Melhor Conforto Para sua Viagem!</p>
         </div>
@@ -50,28 +28,15 @@
       <div class="carousel-item" data-bs-interval="5000">
         <!-- Alterado para 5000ms -->
         <img
-          src="https://www.gattilimousines.com.br/novo/wp-content/uploads/2015/06/WhatsApp-Image-20160531-14.jpg"
-          class="d-block w-100"
-          height="500"
-          alt="..."
-        />
+          src="https://img.freepik.com/fotos-premium/limousine-de-luxo-para-pintura-a-oleo-de-transporte-de-casamento_933496-6302.jpg?w=1380"
+          class="d-block w-100" height="500" alt="..." />
       </div>
     </div>
-    <button
-      class="carousel-control-prev"
-      type="button"
-      data-bs-target="#carousel"
-      data-bs-slide="prev"
-    >
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button
-      class="carousel-control-next"
-      type="button"
-      data-bs-target="#carousel"
-      data-bs-slide="next"
-    >
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
@@ -79,6 +44,13 @@
 </template>
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+body {
+  min-height: 100vh;
+  background-image: url('https://d3rbj9hv9lsqcr.cloudfront.net/ai/lpm7y069fiakjkjnwku92ks3an7p_watermark.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
 
 p {
   font-family: 'Oswald', sans-serif;
