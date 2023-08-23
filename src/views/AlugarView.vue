@@ -34,7 +34,7 @@ onMounted(() => {
     </div>
 
     <div class="botaoalugar">
-      <router-link class="botao" to="/Pagamento">PAGAMENTO</router-link>
+      <router-link class="botao" :to="`/pagamento/${carro.id}`">Pagamento</router-link>
     </div>
   </main>
 </template>

@@ -149,6 +149,7 @@ ul {
   margin-top: 15px;
   border-radius: 10px;
   background-color: black;
+  transition: 0.7s;
 }
 
 .botao:hover {

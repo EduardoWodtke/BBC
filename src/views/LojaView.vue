@@ -44,6 +44,7 @@ import { carros } from '@/_data/carros';
   border-color: black;
   border-style:groove;
   text-decoration: none;
+  transition: 0.7s;
 }
 
 .button:hover {

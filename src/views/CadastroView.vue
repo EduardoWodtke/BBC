@@ -108,9 +108,9 @@ const enviar = ref(false)
   justify-content: center;
   padding: 25px;
   background-color: rgb(220, 220, 220);
-  background-image: url('https://img.freepik.com/vetores-gratis/padrao-de-grade-de-losango-dourado-sem-costura-em-fundo-preto_53876-97589.jpg?w=1480&t=st=1692629059~exp=1692629659~hmac=cb1a6784f9b8a483599a8b16024b00b0355272bf03466cbbcb5f137b23634742');
+  background-image: url('https://d3rbj9hv9lsqcr.cloudfront.net/ai/lpm7y069fiakjkjnwku92ks3an7p_watermark.png');
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% 170%;
   border: 20px;
   border-style: groove;
   border-color: black;

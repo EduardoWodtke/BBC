@@ -44,7 +44,14 @@
         
         <textarea v-model="texto" cols="30" rows="5"></textarea>
         
-        <br />
+        <br>
+
+          <button class="botao">
+
+            enviar
+
+          </button>
+
       </form>
     </div>
   </div>
@@ -54,6 +61,26 @@
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+.botao{
+
+  background-color: black;
+  color: white;
+  border: 3.5px rgb(255, 255, 255) solid;
+  transition: 0.7s;
+
+}
+
+.botao:hover{
+
+  transition: 0.7s;
+  background-color: white;
+  color: black;
+  border: 3.5px black solid;
+  padding: 5px;
+  box-shadow: 10px 10px 10px 0px;
+
+}
 
 h1 {
   font-family: 'Bruno Ace SC', cursive;
@@ -70,7 +97,7 @@ h2 {
 }
 
 .p {
-  font-size: 20px;
+  font-size: 25px;
   margin-top: 10px ;
   font-family: 'Play', sans-serif;
   justify-content: center;
@@ -87,7 +114,6 @@ input{
   text-align: center;
   font-family: 'Play', sans-serif;
   padding: 10px;
-  
 }
 
 .form {
@@ -108,12 +134,13 @@ p {
 .corpo {
   display: grid;
   justify-items: center;
-  grid-template-columns: 500px 500px;
+  grid-template-columns: 300px 500px;
   padding: 50px;
   border: 20px;
   border-color: black;
   border-style: groove;
-  
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .formu {
@@ -122,12 +149,10 @@ p {
 
 .contatos {
   margin-top: 50px;
-  margin-left: 200px;
   justify-content: center;
 }
 
 .contate {
-  margin-left: 900px;
   justify-content: center;
 }
 </style>
