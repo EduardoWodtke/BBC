@@ -89,6 +89,7 @@ const enviar = ref(false)
           <br />
           <input type="checkbox" v-model="aceitaTermos" />
           <br />
+          <br />
           <router-link class="enviar" to="/"> Entrar
           </router-link>
         </div>
@@ -127,6 +128,7 @@ const enviar = ref(false)
   font-family: 'Bebas Neue', sans-serif;
   margin-top: 30px;
   margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 p {
@@ -147,8 +149,8 @@ select {
 }
 
 .enviar {
-  margin-top: 17px;
-  padding: 8px;
+  padding: 10px;
+  margin-bottom: 1000000000000000000000000000000px !important;
   font-weight: bold;
   border-radius: 4px;
   color: rgb(0, 0, 0);
@@ -157,6 +159,7 @@ select {
   font-family: 'Play', sans-serif;
   border-color: rgb(230, 230, 230);
   border-style: groove;
+  text-decoration: none;
 }
 
 h1 {

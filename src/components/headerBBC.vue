@@ -25,7 +25,7 @@ export default {
 <template>
   <header id="header">
     <router-link class="bbc" to="/">
-      <h2>BBC</h2>
+     <img class="logo" src="./Imagens/bbclogo.png" alt="">
     </router-link>
     <nav id="nav">
       <button
@@ -255,5 +255,9 @@ ul {
     transform: rotate(-135deg);
     top: -7px;
   }
+}
+
+.logo {
+  width: 120px;
 }
 </style>

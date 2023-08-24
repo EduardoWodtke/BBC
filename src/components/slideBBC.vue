@@ -30,6 +30,9 @@
         <img
           src="https://img.freepik.com/fotos-premium/limousine-de-luxo-para-pintura-a-oleo-de-transporte-de-casamento_933496-6302.jpg?w=1380"
           class="d-block w-100" height="500" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+          <p>Luxúria e Riqueza!</p>
+          </div>
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
@@ -44,6 +47,7 @@
 </template>
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&display=swap');
 
 body {
   min-height: 100vh;
@@ -54,7 +58,7 @@ body {
 
 p {
   font-family: 'Oswald', sans-serif;
-  font-size: 35px;
+  font-size: 50px;
 }
 
 #carousel {
@@ -69,6 +73,7 @@ p {
 }
 
 .carousel-caption p {
-  font-size: 20px;
+font-family: 'Qwitcher Grypen', cursive;
+font-size: 55px;
 }
 </style>

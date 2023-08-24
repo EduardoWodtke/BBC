@@ -67,7 +67,7 @@ h1 {
   text-align: center;
   border: 20px;
   border-style: groove;
-  border-color: white;
+  border-color: rgb(0, 0, 0);
 }
 
 .imagemLimo {

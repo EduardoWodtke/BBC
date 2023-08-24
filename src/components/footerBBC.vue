@@ -26,9 +26,9 @@
         <div class="footer-col">
           <h4>Loja online</h4>
           <ul>
-            <li><a href="#">Limousines pretas</a></li>
-            <li><a href="#">Limousines Vermelhas</a></li>
-            <li><a href="#">Limousines Rosas</a></li>
+            <li><a href="#">Limousines Black</a></li>
+            <li><a href="#">Limousines Lindas</a></li>
+            <li><a href="#">Limousines Luxuosas</a></li>
             <li><a href="#">Endereço</a></li>
           </ul>
         </div>
