@@ -10,7 +10,7 @@
       <div class="carousel-item active" data-bs-interval="5000">
         <!-- Alterado para 5000ms -->
         <img
-          src="https://img.freepik.com/fotos-gratis/carros-de-luxo-aceleram-em-predios-modernos-ao-entardecer-com-ia-generativa_188544-8048.jpg?w=996&t=st=1692647098~exp=1692647698~hmac=510f03157996275ad4126bd533491ca61e0329aab376bcd80d2a012cd578310d"
+          src="https://img.freepik.com/fotos-premium/uma-limusine-preta-com-a-palavra-chrysler-ao-lado_670382-11575.jpg"
           class="d-block w-100" height="500" alt="Big Black Car" />
         <div class="carousel-caption d-none d-md-block">
           <p>As Mais Excelentes Limousines do Mercado!</p>
@@ -28,11 +28,11 @@
       <div class="carousel-item" data-bs-interval="5000">
         <!-- Alterado para 5000ms -->
         <img
-          src="https://img.freepik.com/fotos-premium/limousine-de-luxo-para-pintura-a-oleo-de-transporte-de-casamento_933496-6302.jpg?w=1380"
+          src="https://img.freepik.com/fotos-premium/limusine-no-tapete-vermelho-generative-ai_220873-22378.jpg"
           class="d-block w-100" height="500" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-caption d-none d-md-block">
           <p>Luxúria e Riqueza!</p>
-          </div>
+        </div>
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
@@ -73,7 +73,7 @@ p {
 }
 
 .carousel-caption p {
-font-family: 'Qwitcher Grypen', cursive;
-font-size: 55px;
+  font-family: 'Qwitcher Grypen', cursive;
+  font-size: 55px;
 }
 </style>
