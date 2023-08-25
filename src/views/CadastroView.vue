@@ -28,7 +28,6 @@ const enviar = ref(false)
             placeholder="Digite seu nome"
             required
           />
-
           <p>Email:</p>
           <input
             type="email"
@@ -38,7 +37,6 @@ const enviar = ref(false)
             autocomplete="on"
             required
           />
-
           <p>Senha:</p>
           <input
             type="password"
@@ -47,7 +45,6 @@ const enviar = ref(false)
             placeholder="Digite sua senha"
             required
           />
-
           <p>Confirmar Senha:</p>
           <input
             type="password"
@@ -56,7 +53,6 @@ const enviar = ref(false)
             placeholder="Confirme sua senha"
             required
           />
-
           <p>Data de Nascimento:</p>
           <input type="date" v-model="dataNascimento" autocomplete="on" required />
 
