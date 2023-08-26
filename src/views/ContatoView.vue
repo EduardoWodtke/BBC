@@ -10,7 +10,7 @@
       
       <div class="contato form">
         <p class="p">
-          Telefone: +55 (019) 96946-6051 <br />
+          Telefone: +55 (019) 96966-6152 <br />
           Email: BigBlackCarsBBC@gmail.com <br />
           Instagram: @BBCOfc <br />
           Endereço: Enzo Marginal, 12715 - Orsk, Campinas - SP, 12245-903 <br />

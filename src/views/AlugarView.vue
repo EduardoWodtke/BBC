@@ -34,7 +34,10 @@ onMounted(() => {
     </div>
 
     <div class="botaoalugar">
-      <router-link class="botao" :to="`/pagamento/${carro.id}`">Pagamento</router-link>
+      <router-link class="botao" :to="`/pix/${carro.id}`">Pix</router-link>
+      <router-link class="botao" :to="`/cartao/${carro.id}`">Cartão de Credito</router-link>
+      <router-link class="botao" :to="`/cartaodb/${carro.id}`">Cartão de Debito</router-link>
+      <router-link class="botao" :to="`/boleto/${carro.id}`">Boleto</router-link>
     </div>
   </main>
 </template>
@@ -43,6 +46,12 @@ onMounted(() => {
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+.botaoalugar {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+}
 
 h1 {
     font-family: 'Bruno Ace SC', cursive;
@@ -74,7 +83,7 @@ h1 {
   background-color: rgb(30, 30, 30);
   padding: 50px;
   border-radius: 10px;
-  border: 5px rgb(255, 255, 255) solid;
+  border: 10px rgb(255, 255, 255) outset;
   justify-content: center;
   width: 500px;
   box-shadow: rgb(0, 0, 0) 10px 10px 10px 0px;
@@ -103,6 +112,9 @@ img {
   background-color: #fff;
   color: black;
   border-color: black;
+  padding: 20px;
+  transition: 0.7s;
+  box-shadow: 10px 10px 10px 0px gray;
 }
 .botao {
   color: white;
@@ -114,7 +126,7 @@ img {
   border-color: white;
   border-style: groove;
   margin-top: 15px;
-  border-radius: 10px;
+  border-radius: 1000px;
   background-color: black;
 }
 </style>

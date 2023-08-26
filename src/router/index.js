@@ -7,6 +7,10 @@ import LoginView from '../views/LoginView.vue'
 import CadastroView from '../views/CadastroView.vue'
 import AlugarView from '../views/AlugarView.vue'
 import PagamentoView from '../views/PagamentoView.vue'
+import PixView from '../views/PixView.vue'
+import CartaoView from '../views/CartaoView.vue'
+import CartaoDbView from '../views/CartaoDbView.vue'
+import BoletoView from '../views/BoletoView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -51,6 +55,30 @@ const router = createRouter({
       path: '/pagamento/:id',
       name: 'pagamento',
       component: PagamentoView,
+      props: true
+    },
+    {
+      path: '/pix/:id',
+      name: 'pix',
+      component: PixView,
+      props: true
+    },
+    {
+      path: '/cartao/:id',
+      name: 'cartao',
+      component: CartaoView,
+      props: true
+    },
+    {
+      path: '/cartaodb/:id',
+      name: 'cartaodb',
+      component: CartaoDbView,
+      props: true
+    },
+    {
+      path: '/boleto/:id',
+      name: 'boleto',
+      component: BoletoView,
       props: true
     }
   ]

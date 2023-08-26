@@ -4,5 +4,6 @@ import slideBBC from '../components/slideBBC.vue';
 
 <template>
 
-  <slideBBC/>
+<slideBBC/>
+
 </template>

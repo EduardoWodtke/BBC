@@ -9,12 +9,12 @@
       <hr />
       <p>
         O projeto "Big Black Cars" (BBC) é uma iniciativa que visa transformar o aluguel de
-        limusines pretas por meio de uma plataforma digital avançada chamada Hackathon. O objetivo é
-        oferecer uma experiência de reserva de limusines personalizada e eficiente, combinando
+        limousines pretas por meio de uma plataforma digital avançada chamada Hackathon. O objetivo é
+        oferecer uma experiência de reserva de limousines personalizada e eficiente, combinando
         elegância e exclusividade. A plataforma integra desenvolvimento web e técnicas de projeto de
         software para criar uma aplicação intuitiva e segura. O sistema abrange desde o cadastro dos
-        clientes até a gestão das reservas e detalhes da frota de limusines. O BBC busca redefinir o
-        luxo, a conveniência e a sofisticação na locação de limusines, tornando cada trajeto uma
+        clientes até a gestão das reservas e detalhes da frota de limousines. O BBC busca redefinir o
+        luxo, a conveniência e a sofisticação na locação de limousines, tornando cada trajeto uma
         celebração única e memorável. <br />
       </p>
     </div>
