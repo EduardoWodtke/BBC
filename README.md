@@ -8,4 +8,4 @@ Ao longo deste projeto, serão aplicados princípios de desenvolvimento web, par
 
 A proposta visa, portanto, unir os conhecimentos adquiridos nas diferentes disciplinas mencionadas, com a finalidade de desenvolver uma solução inovadora e promissora no setor de aluguel de limusines. O Hackathon proporcionará uma oportunidade ímpar para o aprimoramento de habilidades e a aplicação prática dos conceitos aprendidos em sala de aula, possibilitando o fortalecimento do espírito empreendedor e o desenvolvimento de um projeto consistente e viável no mercado atual.
 
-[https://bigblackcars.surge.sh/]
+[https://bigblackcars-bbc.surge.sh/]
