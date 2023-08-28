@@ -73,7 +73,7 @@ const enviar = ref(false)
             type="file"
             id="avatarField"
             @change="handleFileUpload($event)"
-            placeholder="Insira uma foto da sua habiliração"
+            placeholder="Insira uma foto da sua habilitação"
           />
           <hr />
           <label for="aceitaTermos"
@@ -97,7 +97,10 @@ const enviar = ref(false)
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
-
+a{
+  text-decoration: none;
+  color: black;
+}
 .main {
   display: grid;
   grid-template-columns: auto;

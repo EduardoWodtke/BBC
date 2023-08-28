@@ -67,7 +67,7 @@ const carros = ref([
   },
   {
     id: 9,
-    nome: 'LIMOUSINE PRETA',
+    nome: 'MIDNIGHT MAJESTY',
     quantidade: 0,
     preco: 5500.00,
     img:'https://www.gattilimousines.com.br/novo/wp-content/uploads/2015/06/IMG_4462.jpg',

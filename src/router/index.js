@@ -6,7 +6,7 @@ import ContatoView from '../views/ContatoView.vue'
 import LoginView from '../views/LoginView.vue'
 import CadastroView from '../views/CadastroView.vue'
 import AlugarView from '../views/AlugarView.vue'
-import PagamentoView from '../views/PagamentoView.vue'
+import FinalizarView from '../views/FinalizarView.vue'
 import PixView from '../views/PixView.vue'
 import CartaoView from '../views/CartaoView.vue'
 import CartaoDbView from '../views/CartaoDbView.vue'
@@ -52,9 +52,9 @@ const router = createRouter({
       props: true
     },
     {
-      path: '/pagamento/:id',
-      name: 'pagamento',
-      component: PagamentoView,
+      path: '/finalizar/:id',
+      name: 'finalizar',
+      component: FinalizarView,
       props: true
     },
     {
