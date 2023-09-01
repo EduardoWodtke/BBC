@@ -1,3 +1,5 @@
+Participantes: Alisson Brito, Eduardo Roberto, Evelin Rodrigues, Maria Eduarda, Theodoro Obenaus e Victor Sedlak
+
 Um projeto abrangente destinado ao estudo das disciplinas de desenvolvimento web, projeto de software e projeto integrado, intitulado Hackathon.
 
 O trabalho consiste na concepção e desenvolvimento do empreendimento denominado "Big Black Cars" (BBC), voltado à prestação de serviços de locação de limusines pretas.
